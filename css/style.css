@@ -10,10 +10,11 @@
 
 }
 .navBar{
-    background-color: #0D0C0D;
     position: fixed;
     width: 100%;
     top: 0;
+    background: rgb(13,12,13);
+    background: linear-gradient(135deg, rgba(13,12,13,1) 35%, rgba(25,22,22,1) 100%); 
 }
 .navBar__items{
     list-style: none;   
@@ -33,6 +34,43 @@
     font-size: 2.1em;
     font-family: 'Bebas Neue', cursive;
 }
+
+.desplegable__menu{
+    color: #fff;
+    font-size: 2.1em;
+    list-style: none;
+    margin-right: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+
+}
+
+.desplegable__logo{
+    width: 20%;
+}
+.desplegable{
+    display: flex;
+    justify-content: space-between;
+}
+.desplegable__li{
+    list-style: none;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 10px;
+}
+
+.desplegable__li > a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Bebas Neue', cursive;
+    font-size: .5em;
+}
+.desplegable{
+    display: none;
+}
+.desplegable__submenu{
+    display: none;
+}
+
 .header{
     background-image: url(../img/grande.jpg);
     background-size: cover;
@@ -46,6 +84,7 @@
 .header__div > h1{
     font-family: 'Bebas Neue', cursive;
     font-size: 4em;
+    cursor: pointer;
 }
 .redes{
     padding-top: 50px;
@@ -155,11 +194,12 @@
 .comprendiendo > h2{
     padding: 10px;
 }
-
+.navBar__a{
+    transition: all 1s;
+}
 .navBar__a:hover{
     color: orangered;
     font-size: 2.3em;
-    transition: 1s;
 }
 .footer{
     background-color:#0D0C0D;
@@ -171,18 +211,20 @@
 }
 .logoFooter{
     width: 150px;
+    cursor: pointer;
 }
 .fiscalFooter{
     width: 150px;
+    cursor: pointer;
 }
 .footer__a{
     color: #fff;
     text-decoration: none;
+    transition: all 1s;
 }
 .footer__a:hover{
     color: orangered;
     font-size: 1.1em;
-    transition: 1s;
 }
 .footer__div2 > h3{
     margin: 5px;
@@ -195,9 +237,7 @@
     .navBar__a:hover{
         font-size: 1.6em;
     }
-    .header{
-        background-image: url(../img/grand2.jpg);
-    }
+   
     .contenedorPrincipal{
         display: flex;
         flex-direction: column;
@@ -226,13 +266,46 @@
     .footer__div2{
         font-size: 1em;
     }
+}
+@media screen and (max-width:745px) {
+    .header__div{
+        text-align: center;
+    }
+}
+@media screen and (max-width:550px){
+    .navBar__ul{
+        display: none;
+    }
+    .desplegable{
+        display: flex;
+        background: rgb(13,12,13);
+        background: linear-gradient(135deg, rgba(13,12,13,1) 35%, rgba(25,22,22,1) 100%); 
+    }
+    .desplegable li:hover > ul{
+        display: block;
+    }
     .header{
-        background-image: url(../img/grand3.jpg);
+        background-position: -100px;
+    }
+    .logoFooter, .fiscalFooter{
+        width: 90px;
     }
 }
 
-@media screen and (max-width:550px){
-    .logoFooter, .fiscalFooter{
-        width: 90px;
+@media screen and (max-width:980px) {
+    .header{
+        background-position: -150px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .header{
+        background-position: -300px;
+    }
+}
+
+@media screen and (max-width:630px) {
+    .header{
+       background-image: url(../img/ysyfachero.jpg);
     }
 }
