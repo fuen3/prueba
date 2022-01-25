@@ -202,7 +202,8 @@
     font-size: 2.3em;
 }
 .footer{
-    background-color:#0D0C0D;
+    background: rgb(13,12,13);
+    background: linear-gradient(135deg, rgba(13,12,13,1) 35%, rgba(25,22,22,1) 100%);
 }
 .footer__div{
     display: flex;
@@ -309,3 +310,95 @@
        background-image: url(../img/ysyfachero.jpg);
     }
 }
+
+
+
+
+/*             E SHOP                      */
+
+
+
+
+.eshop{
+    display: grid;
+    grid-template-columns: repeat(1fr,5);
+    grid-template-rows: repeat(1fr,4);
+    grid-template-areas: 
+    ". pd1 pd2 pd3 ."
+    ". pd4 pd5 pd6 .";  
+    gap: 15px;
+}
+.pd1{grid-area: pd1;}
+.pd2{grid-area: pd2;}
+.pd3{grid-area: pd3;}
+.pd4{grid-area: pd4;}
+.pd5{grid-area: pd5;}
+.pd6{grid-area: pd6;}
+
+.producto > img{
+    width: 100%;
+    border-radius: 10px;
+}
+.producto{
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+}
+.capa{
+    position: absolute;
+    background-color: rgba(0,0,0,.5);
+    border-radius: 10px;
+    height: 100%;
+    color: #fff;
+    font-family: 'Roboto Condensed', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: none;
+}
+.producto:hover > .capa{
+    display: flex;
+}
+
+.navE{
+    background: rgb(13,12,13);
+    background: linear-gradient(135deg, rgba(13,12,13,1) 35%, rgba(25,22,22,1) 100%);
+}
+.navE__ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navE__li{
+    display: inline-block;
+    font-size: 2.5em;
+    color: #fff;
+    list-style: none;
+}
+.navE__a{
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    color: #fff;
+}
+.logoeshop{
+    width: 2em;
+}
+
+.eshop{
+    margin: 50px 10px;
+}
+.carrito:hover{
+    animation-name: carrito;
+    animation-duration: 2s;
+}
+
+@keyframes carrito {
+    0%{color: #fff;}
+    50%{rotate: 40deg;}
+    80%{color: rgb(14, 167, 14);}
+    100%{color: #fff;}
+}
+
+
