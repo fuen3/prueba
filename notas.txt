@@ -1,0 +1,7 @@
+Hola !
+paso a comentar un poco los cambios en el proyecto,
+trabaje un poco en el SEO y agrege keywords y description al index y a la ESSHOP
+tambien comente todos los ALT de las fotos 
+y corregi malas practicas como por ejemplo que habia muchos h2 en una sola pagina
+tambien agregue scss al proyecto y uso de extends mixins y variables
+y trabaje en la funcionalidad de la eshop, le agregue botones y un poco mas de diseño! 
