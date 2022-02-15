@@ -1,0 +1,33 @@
+.desplegable__menu{
+    color: #fff;
+    font-size: 2.1em;
+    list-style: none;
+    margin-right: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.desplegable__logo{
+    width: 20%;
+}
+.desplegable{
+    display: flex;
+    justify-content: space-between;
+}
+.desplegable__li{
+    list-style: none;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 10px;
+}
+
+.desplegable__li > a {
+    text-decoration: none;
+    color: $blanco;
+    font-family: 'Bebas Neue', cursive;
+    font-size: .5em;
+}
+.desplegable{
+    display: none;
+}
+.desplegable__submenu{
+    display: none;
+}

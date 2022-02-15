@@ -1,0 +1,64 @@
+// HEADER Y NAV DEL INDEX 
+.navBar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    @extend %gradiente;
+}
+.navBar__items{
+    list-style: none;   
+    display: inline-block;
+    padding:  0px 20px;
+}
+.logoNav{
+    width: 40%;
+}
+.navBar__ul{
+    display: flex;
+    align-items: center;
+}
+.navBar__items > a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.1em;
+    font-family: 'Bebas Neue', cursive;
+}
+.header{
+    background-image: url(../img/grande.jpg);
+    background-size: cover;
+    min-height: 50em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: $blanco;
+}
+.header__div > h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 4em;
+    cursor: pointer;
+}
+.redes{
+    padding-top: 50px;
+    text-align: center;
+}
+.redes > h3{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2em;
+}
+.redes__li{
+    list-style: none;
+    display: inline-block;
+}
+.icon{
+    font-size: 3em;
+    padding: 20px 20px;
+    color: $colorhover;
+}
+.navBar__a{
+    transition: all 1s;
+}
+.navBar__a:hover{
+    color: $colorhover;
+    font-size: 2.3em;
+}

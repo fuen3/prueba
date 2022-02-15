@@ -1,0 +1,36 @@
+.contenedorPrincipal {
+    display: grid; 
+    grid-template-columns: repeat(3,1fr);
+    gap: 0px 0px;
+    grid-template-areas: 
+      ". primeraparte ."
+      ". segundaparte ."
+      ". terceraparte ."
+      ". cuartaparte ."
+      ". quintaparte ."; 
+  }
+  .primeraparte { grid-area: primeraparte; }
+  .segundaparte { grid-area: segundaparte; }
+  .terceraparte { grid-area: terceraparte; }
+  .cuartaparte { grid-area: cuartaparte; }
+  .quintaparte { grid-area: quintaparte; }
+
+  .discografia{
+    display: grid;
+    gap: 30px 30px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: 
+    ". album1 album1 side1 side1 ."
+    ". album2 album2 side2 side2 ."
+    ". album3 album3 side3 side3 .";
+    color: #fff;
+    word-spacing: 2px;
+    line-height: 20px;
+}
+
+.album1{grid-area: album1;}
+.side1{grid-area: side1;}
+.album2{grid-area: album2;}
+.side2{grid-area: side2;}
+.album3{grid-area: album3;}
+.side3{grid-area: side3;}

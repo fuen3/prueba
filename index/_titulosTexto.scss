@@ -1,0 +1,26 @@
+.tituloTexto{
+    color: $colorhover;
+    text-align: center;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    margin: 20px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.primeraparte , .segundaparte , .terceraparte , .cuartaparte , .quintaparte{
+    background-color: $colorelementos;
+    color: $blanco;
+    @include pmbr (15px, 20px, 4px);
+    font-size: 18px;
+}
+
+.album1 , .album2 , .album3{
+    background-color: $colorelementos;
+    padding: 15px;
+    border-radius: 4px;
+    h3{
+        color: $colorhover;
+        border-bottom: 1px solid $colorhover;
+        margin-bottom: 10px;
+    }
+}

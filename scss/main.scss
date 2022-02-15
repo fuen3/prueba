@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+//VARIABLES
+@import '../var_extend_mixin/variables';
+@import '../var_extend_mixin/mixins';
+@import '../var_extend_mixin/extend';
+@import '../var_extend_mixin/maps';
+//ETC
+@import '../header_footer/header';
+@import '../header_footer/footer';
+@import '../index/desplegable';
+@import '../index/grillas';
+@import '../index/imagenes';
+@import '../index/titulosTexto';
+@import '../index/videoysy';
+@import '../index/medias';
+@import '../eshop/grillas2';
+@import '../eshop/producto';
+@import '../eshop/headereshop';
+@import '../eshop/mediashop';
+@import '../eshop/btneshop';
+@import '../eshop/titulosTextoshop';
+.cuerpo{
+    background-color: $colorbody;
+ }
+ .margincuerpo{
+     margin-top: 5%;
+ }
+

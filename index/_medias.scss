@@ -1,0 +1,79 @@
+@media screen and (max-width: 900px){
+    .navBar__items > a{
+        font-size: 1.5em;
+    }
+    .navBar__a:hover{
+        font-size: 1.6em;
+    }
+   
+    .contenedorPrincipal{
+        display: flex;
+        flex-direction: column;
+    }
+    .imagenes{
+        width: 100% ;
+    }
+    .discografia{
+        display: flex;
+        flex-direction: column;
+    }
+   .spotify{
+       height: 300px;
+   }
+}
+@media screen and (max-width:737px){
+    .navBar__items > a{
+        font-size: 1.1em;
+    }
+    .navBar__a:hover{
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width:615px){
+    .footer__div2{
+        font-size: 1em;
+    }
+}
+@media screen and (max-width:745px) {
+    .header__div{
+        text-align: center;
+    }
+}
+@media screen and (max-width:550px){
+    .navBar__ul{
+        display: none;
+    }
+    .desplegable{
+        display: flex;
+        background: rgb(13,12,13);
+        background: linear-gradient(135deg, rgba(13,12,13,1) 35%, rgba(25,22,22,1) 100%); 
+    }
+    .desplegable li:hover > ul{
+        display: block;
+    }
+    .header{
+        background-position: -100px;
+    }
+    .logoFooter, .fiscalFooter{
+        width: 90px;
+    }
+}
+
+@media screen and (max-width:980px) {
+    .header{
+        background-position: -150px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .header{
+        background-position: -300px;
+    }
+}
+
+@media screen and (max-width:630px) {
+    .header{
+       background-image: url(../img/ysyfachero.jpg);
+    }
+}

@@ -1,0 +1,27 @@
+.footer{
+    @extend %gradiente;
+}
+.footer__div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logoFooter{
+    width: 150px;
+    cursor: pointer;
+}
+.fiscalFooter{
+  @extend .logoFooter;
+}
+.footer__a{
+    color: $blanco;
+    text-decoration: none;
+    transition: all 1s;
+}
+.footer__a:hover{
+    color: $colorhover;
+    font-size: 1.1em;
+}
+.footer__div2 > h3{
+    margin: 5px;
+}

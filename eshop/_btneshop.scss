@@ -1,0 +1,11 @@
+.producto__btn{
+   @include pmbr (10px,5px,10px);
+   @extend %gradiente;
+   opacity: .8;
+   border: none;
+   font-family: sans-serif;
+   font-weight: 900;
+   text-transform: uppercase;
+   color: $colorhover;
+   cursor: pointer;
+}

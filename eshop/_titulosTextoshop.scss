@@ -1,0 +1,18 @@
+.divTitulo{
+    text-align: center;
+    margin-top: 2em;
+    h1{
+        font-family: 'Bebas Neue', cursive;
+        font-size: 2.5em;
+        color: $colorhover;
+    }
+    a{
+        text-decoration: none;
+        color: $colorhover;
+    }
+    p{
+        font-size: 1.5em;
+        color: $blanco;
+    }
+}
+

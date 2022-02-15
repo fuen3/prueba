@@ -1,436 +1,421 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto Condensed', sans-serif;
-}
-.cuerpo{
-    background-color: #080707;
-}
-.margincuerpo{
-    margin-top: .2%;
-}
-.navBar{
-    position: fixed;
-    width: 100%;
-    top: 0;
-    background: rgb(13,12,13);
-    background: linear-gradient(135deg, rgba(13,12,13,1) 35%, rgba(25,22,22,1) 100%); 
-}
-.navBar__items{
-    list-style: none;   
-    display: inline-block;
-    padding:  0px 20px;
-}
-.logoNav{
-    width: 40%;
-}
-.navBar__ul{
-    display: flex;
-    align-items: center;
-}
-.navBar__items > a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 2.1em;
-    font-family: 'Bebas Neue', cursive;
-}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Condensed', sans-serif; }
 
-.desplegable__menu{
-    color: #fff;
-    font-size: 2.1em;
-    list-style: none;
-    margin-right: 10px;
-    margin-top: 10px;
-    cursor: pointer;
+.navBar, .footer, .producto__btn {
+  background: #0d0c0d;
+  background: linear-gradient(135deg, #0d0c0d 35%, #191616 100%); }
 
-}
+.navBar {
+  position: fixed;
+  width: 100%;
+  top: 0; }
 
-.desplegable__logo{
-    width: 20%;
-}
-.desplegable{
-    display: flex;
-    justify-content: space-between;
-}
-.desplegable__li{
-    list-style: none;
-    border-bottom: 2px solid #fff;
-    margin-bottom: 10px;
-}
+.navBar__items {
+  list-style: none;
+  display: inline-block;
+  padding: 0px 20px; }
+
+.logoNav {
+  width: 40%; }
+
+.navBar__ul {
+  display: flex;
+  align-items: center; }
+
+.navBar__items > a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2.1em;
+  font-family: 'Bebas Neue', cursive; }
+
+.header {
+  background-image: url(../img/grande.jpg);
+  background-size: cover;
+  min-height: 50em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff; }
+
+.header__div > h1 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 4em;
+  cursor: pointer; }
+
+.redes {
+  padding-top: 50px;
+  text-align: center; }
+
+.redes > h3 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 2em; }
+
+.redes__li {
+  list-style: none;
+  display: inline-block; }
+
+.icon {
+  font-size: 3em;
+  padding: 20px 20px;
+  color: #ff4500; }
+
+.navBar__a {
+  transition: all 1s; }
+
+.navBar__a:hover {
+  color: #ff4500;
+  font-size: 2.3em; }
+
+.footer__div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.logoFooter, .fiscalFooter {
+  width: 150px;
+  cursor: pointer; }
+
+.footer__a {
+  color: #fff;
+  text-decoration: none;
+  transition: all 1s; }
+
+.footer__a:hover {
+  color: #ff4500;
+  font-size: 1.1em; }
+
+.footer__div2 > h3 {
+  margin: 5px; }
+
+.desplegable__menu {
+  color: #fff;
+  font-size: 2.1em;
+  list-style: none;
+  margin-right: 10px;
+  margin-top: 10px;
+  cursor: pointer; }
+
+.desplegable__logo {
+  width: 20%; }
+
+.desplegable {
+  display: flex;
+  justify-content: space-between; }
+
+.desplegable__li {
+  list-style: none;
+  border-bottom: 2px solid #fff;
+  margin-bottom: 10px; }
 
 .desplegable__li > a {
-    text-decoration: none;
-    color: #fff;
-    font-family: 'Bebas Neue', cursive;
-    font-size: .5em;
-}
-.desplegable{
-    display: none;
-}
-.desplegable__submenu{
-    display: none;
-}
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Bebas Neue', cursive;
+  font-size: .5em; }
 
-.header{
-    background-image: url(../img/grande.jpg);
-    background-size: cover;
-    min-height: 50em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-}
-.header__div > h1{
-    font-family: 'Bebas Neue', cursive;
-    font-size: 4em;
-    cursor: pointer;
-}
-.redes{
-    padding-top: 50px;
-    text-align: center;
-}
-.redes > h3{
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 2em;
-}
-.redes__li{
-    list-style: none;
-    display: inline-block;
-}
-.icon{
-    font-size: 3em;
-    padding: 20px 20px;
-    color: orangered;
-}
-.imagenes{
-    width: 800px;
-}
+.desplegable {
+  display: none; }
+
+.desplegable__submenu {
+  display: none; }
 
 .contenedorPrincipal {
-    display: grid; 
-    grid-template-columns: repeat(3,1fr);
-    gap: 0px 0px;
-    grid-template-areas: 
-      ". primeraparte ."
-      ". segundaparte ."
-      ". terceraparte ."
-      ". cuartaparte ."
-      ". quintaparte ."; 
-  }
-  .primeraparte { grid-area: primeraparte; }
-  .segundaparte { grid-area: segundaparte; }
-  .terceraparte { grid-area: terceraparte; }
-  .cuartaparte { grid-area: cuartaparte; }
-  .quintaparte { grid-area: quintaparte; }
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0px 0px;
+  grid-template-areas: ". primeraparte ." ". segundaparte ." ". terceraparte ." ". cuartaparte ." ". quintaparte ."; }
 
-  .tituloTexto{
-    color: orangered;
-    text-align: center;
-    font-size: 2.5em;
-    text-transform: uppercase;
-    margin: 20px;
-    font-family: 'Bebas Neue', cursive;
-}
-.imagenes{
-    margin: 10px 0px;
-    border-radius: 4px;
-}
+.primeraparte {
+  grid-area: primeraparte; }
 
-.primeraparte , .segundaparte , .terceraparte , .cuartaparte , .quintaparte{
-    background-color: #0D0C0D;
-    padding: 15px;
-    border-radius: 4px;
-    color: #fff;
-    margin: 20px;
-    font-size: 18px;
-}
+.segundaparte {
+  grid-area: segundaparte; }
 
-.discografia{
-    display: grid;
-    gap: 30px 30px;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-areas: 
-    ". album1 album1 side1 side1 ."
-    ". album2 album2 side2 side2 ."
-    ". album3 album3 side3 side3 .";
-    color: #fff;
-    word-spacing: 2px;
-    line-height: 20px;
-}
+.terceraparte {
+  grid-area: terceraparte; }
 
-.album1{grid-area: album1;}
-.side1{grid-area: side1;}
-.album2{grid-area: album2;}
-.side2{grid-area: side2;}
-.album3{grid-area: album3;}
-.side3{grid-area: side3;}
+.cuartaparte {
+  grid-area: cuartaparte; }
 
-.album1 , .album2 , .album3{
-    background-color: #0D0C0D;;
-    padding: 15px;
-    border-radius: 4px;
-}
+.quintaparte {
+  grid-area: quintaparte; }
 
-.comprendiendo{
-    margin: 40px;
+.discografia {
+  display: grid;
+  gap: 30px 30px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas: ". album1 album1 side1 side1 ." ". album2 album2 side2 side2 ." ". album3 album3 side3 side3 .";
+  color: #fff;
+  word-spacing: 2px;
+  line-height: 20px; }
+
+.album1 {
+  grid-area: album1; }
+
+.side1 {
+  grid-area: side1; }
+
+.album2 {
+  grid-area: album2; }
+
+.side2 {
+  grid-area: side2; }
+
+.album3 {
+  grid-area: album3; }
+
+.side3 {
+  grid-area: side3; }
+
+.imagenes {
+  width: 800px;
+  margin: 10px 0px;
+  border-radius: 4px; }
+
+.tituloTexto {
+  color: #ff4500;
+  text-align: center;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  margin: 20px;
+  font-family: 'Bebas Neue', cursive; }
+
+.primeraparte, .segundaparte, .terceraparte, .cuartaparte, .quintaparte {
+  background-color: #0D0C0D;
+  color: #fff;
+  padding: 15px;
+  margin: 20px;
+  border-radius: 4px;
+  font-size: 18px; }
+
+.album1, .album2, .album3 {
+  background-color: #0D0C0D;
+  padding: 15px;
+  border-radius: 4px; }
+  .album1 h3, .album2 h3, .album3 h3 {
+    color: #ff4500;
+    border-bottom: 1px solid #ff4500;
+    margin-bottom: 10px; }
+
+.comprendiendo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: 'Bebas Neue', cursive;
+  background-color: #0D0C0D;
+  padding: 20px;
+  margin: 40px;
+  border-radius: 4px;
+  width: 800px;
+  height: 500px; }
+
+.artVideo {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.comprendiendo > h2 {
+  padding: 10px; }
+
+@media screen and (max-width: 900px) {
+  .navBar__items > a {
+    font-size: 1.5em; }
+  .navBar__a:hover {
+    font-size: 1.6em; }
+  .contenedorPrincipal {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    font-family: 'Bebas Neue', cursive;
-    background-color: #0D0C0D;
-    padding: 20px;
-    border-radius: 4px;
-    width: 800px;
-    height: 500px;
-}
-.artVideo{
+    flex-direction: column; }
+  .imagenes {
+    width: 100%; }
+  .discografia {
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.comprendiendo > h2{
-    padding: 10px;
-}
-.navBar__a{
-    transition: all 1s;
-}
-.navBar__a:hover{
-    color: orangered;
-    font-size: 2.3em;
-}
-.footer{
-    background: rgb(13,12,13);
-    background: linear-gradient(135deg, rgba(13,12,13,1) 35%, rgba(25,22,22,1) 100%);
-}
-.footer__div{
+    flex-direction: column; }
+  .spotify {
+    height: 300px; } }
+
+@media screen and (max-width: 737px) {
+  .navBar__items > a {
+    font-size: 1.1em; }
+  .navBar__a:hover {
+    font-size: 1.2em; } }
+
+@media screen and (max-width: 615px) {
+  .footer__div2 {
+    font-size: 1em; } }
+
+@media screen and (max-width: 745px) {
+  .header__div {
+    text-align: center; } }
+
+@media screen and (max-width: 550px) {
+  .navBar__ul {
+    display: none; }
+  .desplegable {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.logoFooter{
-    width: 150px;
-    cursor: pointer;
-}
-.fiscalFooter{
-    width: 150px;
-    cursor: pointer;
-}
-.footer__a{
-    color: #fff;
-    text-decoration: none;
-    transition: all 1s;
-}
-.footer__a:hover{
-    color: orangered;
-    font-size: 1.1em;
-}
-.footer__div2 > h3{
-    margin: 5px;
-}
+    background: #0d0c0d;
+    background: linear-gradient(135deg, #0d0c0d 35%, #191616 100%); }
+  .desplegable li:hover > ul {
+    display: block; }
+  .header {
+    background-position: -100px; }
+  .logoFooter, .fiscalFooter, .fiscalFooter {
+    width: 90px; } }
 
-@media screen and (max-width: 900px){
-    .navBar__items > a{
-        font-size: 1.5em;
-    }
-    .navBar__a:hover{
-        font-size: 1.6em;
-    }
-   
-    .contenedorPrincipal{
-        display: flex;
-        flex-direction: column;
-    }
-    .imagenes{
-        width: 100% ;
-    }
-    .discografia{
-        display: flex;
-        flex-direction: column;
-    }
-   .spotify{
-       height: 300px;
-   }
-}
-@media screen and (max-width:737px){
-    .navBar__items > a{
-        font-size: 1.1em;
-    }
-    .navBar__a:hover{
-        font-size: 1.2em;
-    }
-}
+@media screen and (max-width: 980px) {
+  .header {
+    background-position: -150px; } }
 
-@media screen and (max-width:615px){
-    .footer__div2{
-        font-size: 1em;
-    }
-}
-@media screen and (max-width:745px) {
-    .header__div{
-        text-align: center;
-    }
-}
-@media screen and (max-width:550px){
-    .navBar__ul{
-        display: none;
-    }
-    .desplegable{
-        display: flex;
-        background: rgb(13,12,13);
-        background: linear-gradient(135deg, rgba(13,12,13,1) 35%, rgba(25,22,22,1) 100%); 
-    }
-    .desplegable li:hover > ul{
-        display: block;
-    }
-    .header{
-        background-position: -100px;
-    }
-    .logoFooter, .fiscalFooter{
-        width: 90px;
-    }
-}
+@media screen and (max-width: 800px) {
+  .header {
+    background-position: -300px; } }
 
-@media screen and (max-width:980px) {
-    .header{
-        background-position: -150px;
-    }
-}
+@media screen and (max-width: 630px) {
+  .header {
+    background-image: url(../img/ysyfachero.jpg); } }
 
-@media screen and (max-width:800px) {
-    .header{
-        background-position: -300px;
-    }
-}
+.eshop {
+  display: grid;
+  grid-template-columns: repeat(1fr, 5);
+  grid-template-rows: repeat(1fr, 4);
+  grid-template-areas: ". pd1 pd2 pd3 ." ". pd4 pd5 pd6 .";
+  gap: 15px; }
 
-@media screen and (max-width:630px) {
-    .header{
-       background-image: url(../img/ysyfachero.jpg);
-    }
-}
+.pd1 {
+  grid-area: pd1; }
 
+.pd2 {
+  grid-area: pd2; }
 
+.pd3 {
+  grid-area: pd3; }
 
+.pd4 {
+  grid-area: pd4; }
 
-/*             E SHOP                      */
+.pd5 {
+  grid-area: pd5; }
 
+.pd6 {
+  grid-area: pd6; }
 
+.producto > img {
+  width: 100%;
+  border-radius: 10px; }
 
+.producto {
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  width: 100%; }
 
-.eshop{
-    display: grid;
-    grid-template-columns: repeat(1fr,5);
-    grid-template-rows: repeat(1fr,4);
-    grid-template-areas: 
-    ". pd1 pd2 pd3 ."
-    ". pd4 pd5 pd6 .";  
-    gap: 15px;
-}
-.pd1{grid-area: pd1;}
-.pd2{grid-area: pd2;}
-.pd3{grid-area: pd3;}
-.pd4{grid-area: pd4;}
-.pd5{grid-area: pd5;}
-.pd6{grid-area: pd6;}
+.capa {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-family: 'Roboto Condensed', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: none; }
+  .capa h3 {
+    color: #ff4500;
+    text-transform: uppercase; }
 
-.producto > img{
-    width: 100%;
-    border-radius: 10px;
-}
-.producto{
-    border-radius: 10px;
-    position: relative;
-    display: flex;
-    width: 100%;
-}
-.capa{
-    position: absolute;
-    background-color: rgba(0,0,0,.5);
-    border-radius: 10px;
-    width: 100%;
-    height: 100%;
-    color: #fff;
-    font-family: 'Roboto Condensed', sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    display: none;
-}
-.producto:hover > .capa{
-    display: flex;
-}
+.producto:hover > .capa {
+  display: flex; }
 
-.navE{
-    background: rgb(13,12,13);
-    background: linear-gradient(135deg, rgba(13,12,13,1) 35%, rgba(25,22,22,1) 100%);
-}
-.navE__ul{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.navE__li{
-    display: inline-block;
-    font-size: 2.5em;
-    color: #fff;
-    list-style: none;
-}
-.navE__a{
-    text-decoration: none;
-    font-family: 'Bebas Neue', cursive;
-    color: #fff;
-}
-.logoeshop{
-    width: 2em;
-}
-.inicioshop{
-    transition: all 1s;
-}
-.inicioshop:hover{
-    text-shadow: 4px 4px 26px rgba(255,255,255,0.6);
-}
-.eshop{
-    margin: 50px 10px;
-}
-.carrito:hover{
-    animation-name: carrito;
-    animation-duration: 2s;
-}
+.navE {
+  background: #0d0c0d;
+  background: linear-gradient(135deg, #0d0c0d 35%, #191616 100%); }
+
+.navE__ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.navE__li {
+  display: inline-block;
+  font-size: 2.5em;
+  color: #fff;
+  list-style: none; }
+
+.navE__a {
+  text-decoration: none;
+  font-family: 'Bebas Neue', cursive;
+  color: #fff; }
+
+.logoeshop {
+  width: 2em; }
+
+.inicioshop {
+  transition: all 1s; }
+
+.inicioshop:hover {
+  text-shadow: 4px 4px 26px rgba(255, 255, 255, 0.6); }
+
+.eshop {
+  margin: 50px 10px; }
+
+.carrito:hover {
+  animation-name: carrito;
+  animation-duration: 2s; }
 
 @keyframes carrito {
-    0%{color: #fff;}
-    50%{rotate: 40deg;}
-    80%{color: rgb(14, 167, 14);}
-    100%{color: #fff;}
-}
-@media screen and (max-width:800px){
-    .eshop{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-}
+  0% {
+    color: #fff; }
+  50% {
+    rotate: 40deg; }
+  80% {
+    color: #0ea70e; }
+  100% {
+    color: #fff; } }
 
+@media screen and (max-width: 800px) {
+  .eshop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
 
-/*       FAQ HTML  CON BOOTSTRAP      */
+.producto__btn {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  opacity: .8;
+  border: none;
+  font-family: sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #ff4500;
+  cursor: pointer; }
 
+.divTitulo {
+  text-align: center;
+  margin-top: 2em; }
+  .divTitulo h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.5em;
+    color: #ff4500; }
+  .divTitulo a {
+    text-decoration: none;
+    color: #ff4500; }
+  .divTitulo p {
+    font-size: 1.5em;
+    color: #fff; }
 
-.navbar{
-    background: rgb(13,12,13);
-    background: linear-gradient(135deg, rgba(13,12,13,1) 35%, rgba(25,22,22,1) 100%); 
-}
+.cuerpo {
+  background-color: #080707; }
 
-.card{
-    margin: 1em;
-}
-
-
-.nav-link{
-    color: #fff;
-}
+.margincuerpo {
+  margin-top: 5%; }

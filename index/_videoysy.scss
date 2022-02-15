@@ -1,0 +1,20 @@
+.comprendiendo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $blanco;
+    font-family: 'Bebas Neue', cursive;
+    background-color: $colorelementos;
+    @include pmbr(20px,40px,4px);
+    width: 800px;
+    height: 500px;
+}
+.artVideo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.comprendiendo > h2{
+    padding: 10px;
+}

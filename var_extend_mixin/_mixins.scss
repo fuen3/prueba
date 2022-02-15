@@ -1,0 +1,5 @@
+@mixin pmbr ($p, $m, $br){
+    padding: $p;
+    margin: $m;
+    border-radius: $br;
+}

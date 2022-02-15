@@ -1,0 +1,15 @@
+.eshop{
+    display: grid;
+    grid-template-columns: repeat(1fr,5);
+    grid-template-rows: repeat(1fr,4);
+    grid-template-areas: 
+    ". pd1 pd2 pd3 ."
+    ". pd4 pd5 pd6 .";  
+    gap: 15px;
+}
+.pd1{grid-area: pd1;}
+.pd2{grid-area: pd2;}
+.pd3{grid-area: pd3;}
+.pd4{grid-area: pd4;}
+.pd5{grid-area: pd5;}
+.pd6{grid-area: pd6;}

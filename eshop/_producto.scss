@@ -1,0 +1,32 @@
+.producto > img{
+    width: 100%;
+    border-radius: 10px;
+}
+.producto{
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+.capa{
+    position: absolute;
+    background-color: rgba(0,0,0,.5);
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    color: $blanco;
+    font-family: 'Roboto Condensed', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: none;
+    h3{
+        color: $colorhover;
+        text-transform: uppercase;
+    }
+}
+.producto:hover > .capa{
+    display: flex;
+}
