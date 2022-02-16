@@ -1,0 +1,21 @@
+.condiciones{
+    background-color: $colorelementos;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 10px 5px 5px black;
+    h1{
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: underline;
+        color: $blanco;
+        padding: 4px;
+        text-shadow: 10px 5px 5px black;
+    }
+    h3,h2{
+        color: $colorhover;
+        padding-top: 10px;
+    }
+    p{
+        color: $blanco;
+    }
+}

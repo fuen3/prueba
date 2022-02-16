@@ -1,0 +1,40 @@
+.flex-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedorfaq{
+    @extend %gradiente;
+    width: 60%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.contenedorform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-text{
+    width: 300px;
+}
+textarea.txt-area{
+    width: 400px;
+    border: 1px solid $blanco;
+    border-radius: 6px;
+}
+.forms{
+    padding: 5px;
+    margin: 10px;
+    border: none;
+    border-bottom: 1px solid $blanco;
+    background: none;
+    color: $blanco;
+    outline: none;
+}
+
+button.forms{
+    cursor: pointer;
+    width: 150px;
+}

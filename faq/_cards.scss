@@ -1,0 +1,38 @@
+.contenedor_flex{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.contenedorCards{
+    background-color: $colorelementos;
+    width: 95%;
+    border-radius: 6px;
+    padding: 20px;
+} 
+.card{
+    display: inline-block;
+    background: rgb(186,186,186);
+    background: linear-gradient(135deg, rgba(186,186,186,1) 35%, rgba(170,170,170,1) 100%);
+    border-radius: 6px;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    box-shadow: 10px 5px 5px black;
+    transition:  all .5s;
+    cursor: pointer;
+    h3{
+        font-size: 1.5em;
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+    h4{
+        border-top: 3px solid gray;
+    }
+}
+
+.card:hover{
+    transform: translateY(-3%);
+}

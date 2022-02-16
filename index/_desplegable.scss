@@ -1,5 +1,5 @@
 .desplegable__menu{
-    color: #fff;
+    color: $blanco;
     font-size: 2.1em;
     list-style: none;
     margin-right: 10px;
@@ -9,14 +9,10 @@
 .desplegable__logo{
     width: 20%;
 }
-.desplegable{
-    display: flex;
-    justify-content: space-between;
-}
 .desplegable__li{
     list-style: none;
-    border-bottom: 2px solid #fff;
-    margin-bottom: 10px;
+    border-bottom: 3px solid $colorhover;
+    margin-bottom: 3px;
 }
 
 .desplegable__li > a {
@@ -25,9 +21,12 @@
     font-family: 'Bebas Neue', cursive;
     font-size: .5em;
 }
-.desplegable{
-    display: none;
-}
 .desplegable__submenu{
+   display: none;
+}
+.mostrar{
+    display: block;
+}
+.desplegable{
     display: none;
 }
