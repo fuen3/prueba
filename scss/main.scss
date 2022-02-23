@@ -12,7 +12,7 @@
 //ETC
 @import '../header_footer/header';
 @import '../header_footer/footer';
-@import '../index/desplegable';
+@import '../index/navbar';
 @import '../index/grillas';
 @import '../index/imagenes';
 @import '../index/titulosTexto';
@@ -33,7 +33,3 @@
 .cuerpo{
     background-color: $colorbody;
  }
- .margincuerpo{
-     margin-top: 5%;
- }
-

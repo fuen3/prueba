@@ -1,28 +1,4 @@
-// HEADER Y NAV DEL INDEX 
-.navBar{
-    position: fixed;
-    width: 100%;
-    top: 0;
-    @extend %gradiente;
-}
-.navBar__items{
-    list-style: none;   
-    display: inline-block;
-    padding:  0px 20px;
-}
-.logoNav{
-    width: 40%;
-}
-.navBar__ul{
-    display: flex;
-    align-items: center;
-}
-.navBar__items > a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 2.1em;
-    font-family: 'Bebas Neue', cursive;
-}
+
 .header{
     background-image: url(../img/grande.jpg);
     background-size: cover;
@@ -59,12 +35,4 @@
 .icon:hover{
     transform: rotate(40deg);
     color: $blanco;
-    font-size: 3.5em;
-}
-.navBar__a{
-    transition: all 1s;
-}
-.navBar__a:hover{
-    color: $colorhover;
-    font-size: 2.3em;
 }

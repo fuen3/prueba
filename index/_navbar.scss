@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-bar{
+    background: $colorbody;
+    display: block;
+    color: $blanco;
+    cursor: pointer;
+    font-size: 1.5em;
+    width: 100%;
+    @extend %gradiente;
+    position: fixed;
+    padding: 15px;
+    font-family: 'Bebas Neue', cursive;
+    i{
+        margin-right: 10px;
+    }
+}
+.menu, .submenu{
+    list-style: none;
+}
+
+.menu{
+    background: $colorelementos;
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+
+.menu__link{
+    display: block;
+    padding: 10px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.1em;
+    text-decoration: none;
+    color: white;
+    transition: all .7s;
+}
+
+.menu{
+    margin-left: -100%;
+    margin-top: 50px;
+    width: 100%;
+    transition: all .5s;
+}
+
+.mostrar{
+    margin-left: 0px;
+    margin-top: 50px;
+    position: fixed;
+}
+
+.logoNav{
+    width: 35%;
+}
+
+.logoitem{
+    width: 25%;
+}
+
+.menu__link:hover{
+    color: $colorhover;
+}

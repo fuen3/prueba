@@ -4,32 +4,9 @@
   box-sizing: border-box;
   font-family: 'Roboto Condensed', sans-serif; }
 
-.navBar, .footer, .producto__btn, .contenedorfaq {
+.footer, .nav-bar, .producto__btn, .contenedorfaq {
   background: #0d0c0d;
   background: linear-gradient(135deg, #0d0c0d 35%, #191616 100%); }
-
-.navBar {
-  position: fixed;
-  width: 100%;
-  top: 0; }
-
-.navBar__items {
-  list-style: none;
-  display: inline-block;
-  padding: 0px 20px; }
-
-.logoNav {
-  width: 40%; }
-
-.navBar__ul {
-  display: flex;
-  align-items: center; }
-
-.navBar__items > a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 2.1em;
-  font-family: 'Bebas Neue', cursive; }
 
 .header {
   background-image: url(../img/grande.jpg);
@@ -66,15 +43,7 @@
 
 .icon:hover {
   transform: rotate(40deg);
-  color: #fff;
-  font-size: 3.5em; }
-
-.navBar__a {
-  transition: all 1s; }
-
-.navBar__a:hover {
-  color: #ff4500;
-  font-size: 2.3em; }
+  color: #fff; }
 
 .footer__div {
   display: flex;
@@ -89,45 +58,69 @@
 .footer__a {
   color: #fff;
   text-decoration: none;
-  transition: all 1s; }
+  transition: all .7s; }
 
 .footer__a:hover {
-  color: #ff4500;
-  font-size: 1.1em; }
+  color: #ff4500; }
 
 .footer__div2 > h3 {
   margin: 5px; }
 
-.desplegable__menu {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.nav-bar {
+  background: #080707;
+  display: block;
   color: #fff;
-  font-size: 2.1em;
-  list-style: none;
-  margin-right: 10px;
-  margin-top: 10px;
-  cursor: pointer; }
+  cursor: pointer;
+  font-size: 1.5em;
+  width: 100%;
+  position: fixed;
+  padding: 15px;
+  font-family: 'Bebas Neue', cursive; }
+  .nav-bar i {
+    margin-right: 10px; }
 
-.desplegable__logo {
-  width: 20%; }
+.menu, .submenu {
+  list-style: none; }
 
-.desplegable__li {
-  list-style: none;
-  border-bottom: 3px solid #ff4500;
-  margin-bottom: 3px; }
+.menu {
+  background: #0D0C0D;
+  position: absolute;
+  display: flex;
+  align-items: center; }
 
-.desplegable__li > a {
-  text-decoration: none;
-  color: #fff;
+.menu__link {
+  display: block;
+  padding: 10px;
   font-family: 'Bebas Neue', cursive;
-  font-size: .5em; }
+  font-size: 2.1em;
+  text-decoration: none;
+  color: white;
+  transition: all .7s; }
 
-.desplegable__submenu {
-  display: none; }
+.menu {
+  margin-left: -100%;
+  margin-top: 50px;
+  width: 100%;
+  transition: all .5s; }
 
 .mostrar {
-  display: block; }
+  margin-left: 0px;
+  margin-top: 50px;
+  position: fixed; }
 
-.desplegable {
-  display: none; }
+.logoNav {
+  width: 35%; }
+
+.logoitem {
+  width: 25%; }
+
+.menu__link:hover {
+  color: #ff4500; }
 
 .contenedorPrincipal {
   display: grid;
@@ -232,8 +225,6 @@
 @media screen and (max-width: 900px) {
   .navBar__items > a {
     font-size: 1.5em; }
-  .navBar__a:hover {
-    font-size: 1.6em; }
   .contenedorPrincipal {
     display: flex;
     flex-direction: column; }
@@ -247,9 +238,7 @@
 
 @media screen and (max-width: 737px) {
   .navBar__items > a {
-    font-size: 1.1em; }
-  .navBar__a:hover {
-    font-size: 1.2em; } }
+    font-size: 1.1em; } }
 
 @media screen and (max-width: 615px) {
   .footer__div2 {
@@ -260,13 +249,6 @@
     text-align: center; } }
 
 @media screen and (max-width: 550px) {
-  .navBar__ul {
-    display: none; }
-  .desplegable {
-    display: flex;
-    justify-content: space-between;
-    background: #0d0c0d;
-    background: linear-gradient(135deg, #0d0c0d 35%, #191616 100%); }
   .header {
     background-position: -100px; }
   .logoFooter, .fiscalFooter, .fiscalFooter {
@@ -283,6 +265,22 @@
 @media screen and (max-width: 630px) {
   .header {
     background-image: url(../img/ysyfachero.jpg); } }
+
+@media screen and (min-width: 1024px) {
+  .nav-bar {
+    display: none; }
+  .menu {
+    position: fixed;
+    margin-top: 0px;
+    margin-left: 0px;
+    display: flex; } }
+
+@media screen and (max-width: 1023px) {
+  .menu {
+    flex-direction: column;
+    align-items: flex-start; }
+  .logoitem {
+    display: none; } }
 
 .eshop {
   display: grid;
@@ -454,6 +452,9 @@
 .card:hover {
   transform: translateY(-3%); }
 
+.iconfaq {
+  color: #fff; }
+
 .contenedorCards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -567,12 +568,12 @@ button.forms {
   background-color: #0D0C0D;
   padding: 15px;
   border-radius: 6px;
-  box-shadow: 10px 5px 5px black; }
+  box-shadow: 10px 5px 5px black;
+  width: 85%; }
   .condiciones h1 {
     text-align: center;
     text-transform: uppercase;
-    text-decoration: underline;
-    color: #fff;
+    color: #ff4500;
     padding: 4px;
     text-shadow: 10px 5px 5px black; }
   .condiciones h3, .condiciones h2 {
@@ -583,6 +584,3 @@ button.forms {
 
 .cuerpo {
   background-color: #080707; }
-
-.margincuerpo {
-  margin-top: 5%; }

@@ -1,5 +1,5 @@
 const btnMenu = document.querySelector("#btnMenu");
-const submenu = document.querySelector("#submenu");
+const menu = document.querySelector("#menu");
 btnMenu.addEventListener("click",function(){
-    submenu.classList.toggle("mostrar");
+    menu.classList.toggle("mostrar");
 });

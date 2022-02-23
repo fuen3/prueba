@@ -17,11 +17,10 @@
 .footer__a{
     color: $blanco;
     text-decoration: none;
-    transition: all 1s;
+    transition: all .7s;
 }
 .footer__a:hover{
     color: $colorhover;
-    font-size: 1.1em;
 }
 .footer__div2 > h3{
     margin: 5px;
