@@ -25,6 +25,12 @@
       .card6 { grid-area: card6; }
       
 }
+
+@media screen and (max-width:1024px){
+    .contenedorfaq{
+        width: 90%;
+    }
+}
 @media screen and (max-width: 900px){
     .contenedorCards{
         display: flex;
@@ -34,24 +40,8 @@
     }
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 470px){
     textarea.txt-area{
-        width: 250px;
-    }
-}
-@media screen and (max-width: 540px){
-    textarea.txt-area{
-        width: 190px;
-    }
-    .input-text{
-        width: 150px;
-    }
-}
-@media screen and (max-width: 350px){
-    textarea.txt-area{
-        width: 140px;
-    }
-    .input-text{
-        width: 120px;
+        width: 300px;
     }
 }
