@@ -200,12 +200,6 @@
     border-bottom: 1px solid #ff4500;
     margin-bottom: 10px; }
 
-.h3discografia {
-  background-color: #0D0C0D;
-  width: 300px;
-  border-radius: 4px;
-  margin: auto; }
-
 .comprendiendo {
   display: flex;
   flex-direction: column;
@@ -360,10 +354,16 @@ h3.sld {
     text-transform: uppercase; }
 
 .contenedorshop {
-  height: 400px; }
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
 
 .metodopago img {
-  width: 70%; }
+  width: 40%; }
+
+.formshop {
+  padding: 50px; }
 
 .navE {
   background: #0d0c0d;
@@ -437,6 +437,10 @@ h3.sld {
     flex-direction: column;
     justify-content: center;
     align-items: center; } }
+
+@media screen and (max-width: 550px) {
+  .contenedorshop {
+    height: 550px; } }
 
 @media screen and (max-width: 450px) {
   .capa {

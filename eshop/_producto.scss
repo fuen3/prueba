@@ -53,10 +53,16 @@ h3.sld{
 }
 .contenedorshop{
     height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .metodopago{
     img{
-        width: 70%;
+        width: 40%;
     }
+}
+.formshop{
+    padding: 50px;
 }

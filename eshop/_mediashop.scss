@@ -25,6 +25,11 @@
         align-items: center;
     }
 }
+@media screen and (max-width:550px) {
+    .contenedorshop{
+        height: 550px;
+    }
+}
 @media screen and (max-width:450px) {
     .capa{
         width: 80%;
